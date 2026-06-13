@@ -1,9 +1,19 @@
+import Hero from "../components/Hero"
+import Facts from "../components/Facts"
+import Statement from "../components/Statement"
+import pImage from '../assets/navajo.jpg'
+import ParallaxImage from "../components/ParallaxImage"
+
 export default function Home() {
-    return (
-        <main className="container flex min-h-screen flex-col items-center justify-center text-center">
-            <h1 className="mt-4 font-display text-6xl font-black">
-                Home
-            </h1>
-        </main>
-    )
+  return (
+    <main>
+      <Hero />
+
+      <Facts />
+      <ParallaxImage src={pImage} alt="Renewal" caption="Mononoke" />
+
+      <Statement statement={{ kind: 'loud', lines: ['Together', 'Stronger'], foot: 'A shared experience of oppression' }} align="right" />
+
+    </main>
+  )
 }

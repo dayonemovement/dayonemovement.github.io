@@ -1,13 +1,44 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>dayonemovement.github.io</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Day One Movement - The main message of the movement." />
+  <title>dayonemovement.github.io</title>
+  <!-- Set theme before paint to avoid a flash of the wrong mode -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        // Dark is the default; only go light if the user explicitly chose it.
+        if (stored !== 'light') document.documentElement.classList.add('dark');
+
+        const params = new URLSearchParams(window.location.search)
+        const redirect = params.get('redirect')
+
+        if (redirect) {
+          const decoded = decodeURIComponent(redirect)
+
+          // Replace URL BEFORE React even loads
+          window.history.replaceState({}, '', decoded)
+        }
+
+      } catch (e) { }
+    })();
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>

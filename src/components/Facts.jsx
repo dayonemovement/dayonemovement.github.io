@@ -32,7 +32,7 @@ export default function  Facts() {
                     </Reveal>
                     <div className="mt-14 grid grid-cols-1 gap-px border border-line bg-line sm:grid-cols-2 lg:grid-cols-4">
                         {facts.map((f, i) => (
-                            <Reveal key={i} delay={(i % 4) * 0.2} className="bg-bg">
+                            <Reveal key={i} delay={(i % 4) * 0.12} className="bg-bg">
                                 <div className="flex h-full flex-col p-7">
                                     <p className="font-display text-5xl font-black text-accent md:text-6xl">{f.stat}</p>
                                     <p className="mt-4 text-sm leading-relaxed text-muted">{f.label}</p>

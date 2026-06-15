@@ -1,3 +1,7 @@
+import navajo from "../assets/navajo.jpg"
+import responceAct from "../assets/responseAct.png"
+import hero from "../assets/hero.png"
+
 export const resources = [
   {
     id: 'tibetan-language-primer',
@@ -7,7 +11,7 @@ export const resources = [
     tags: ['tibetan', 'beginner', 'guide'],
     type: 'pdf', // 'link' | 'pdf' | 'image'
     url: '/resources/tibetan-primer.pdf',
-    thumbnail: '/src/assets/navajo.jpg',
+    thumbnail: navajo,
   },
   {
     id: 'monastery-map',
@@ -17,7 +21,7 @@ export const resources = [
     tags: ['geography', 'history', 'monasteries'],
     type: 'link',
     url: 'https://example.com/monastery-map',
-    thumbnail: '/src/assets/responseAct.png',
+    thumbnail: responceAct,
   },
   {
     id: 'flag-illustration',
@@ -27,6 +31,6 @@ export const resources = [
     tags: ['illustration', 'culture'],
     type: 'image',
     url: '/images/resources/snow-lion-full.jpg',
-    thumbnail: '/src/assets/hero.png',
+    thumbnail: hero,
   },
 ]

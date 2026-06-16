@@ -1,17 +1,17 @@
-import navajo from "../assets/navajo.jpg"
+import protest from "../assets/protest.jpg"
 import responceAct from "../assets/responseAct.png"
-import hero from "../assets/hero.png"
+import poster from "../assets/poster.png"
 
 export const resources = [
   {
     id: 'tibetan-language-primer',
     title: 'Draft Your Own Local Community Safety Policy',
     description: 'A beginner-friendly guide covering the Tibetan script, pronunciation, and common phrases.',
-    category: 'Toolkit',
+    category: 'Toolkits',
     tags: ['tibetan', 'beginner', 'guide'],
     type: 'pdf', // 'link' | 'pdf' | 'image'
     url: '/resources/tibetan-primer.pdf',
-    thumbnail: navajo,
+    thumbnail: protest,
   },
   {
     id: 'monastery-map',
@@ -27,10 +27,10 @@ export const resources = [
     id: 'flag-illustration',
     title: '4th of You lie banner',
     description: 'A high-resolution illustration available for educational and non-commercial use.',
-    category: 'Banner',
+    category: 'Artwork',
     tags: ['illustration', 'culture'],
     type: 'image',
     url: '/images/resources/snow-lion-full.jpg',
-    thumbnail: hero,
+    thumbnail: poster,
   },
 ]

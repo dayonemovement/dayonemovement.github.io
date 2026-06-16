@@ -27,7 +27,7 @@ export default function Hero() {
                     transition={transition(0)}
                     className="mb-6 font-mono text-xs uppercase text-accent tracking-[0.3em] md:text-sm"
                 >
-                    Lorem, ipsum dolor sit amet. Itaque iste qui nam! 250 Rerum?
+                    Day One
                 </motion.p>
 
                 <h1 className="font-display text-display leading-[0.95]">
@@ -49,10 +49,7 @@ export default function Hero() {
                     transition={transition(0.3)}
                     className="mt-8 max-w-xl text-lg leading-relaxed text-muted md:text-xl"
                 >
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi hic
-                    ducimus fugit adipisci harum cupiditate assumenda officia, dolorem
-                    voluptatibus sapiente maiores dolore commodi, accusamus soluta atque
-                    esse expedita suscipit voluptas.
+                    A movement of people committed to a simple promise of not another 250 years of the same injustice. Day 1 is for anyone who believes in naming the harms of the past and building a future that includes LANDBACK and Reparations, where all people can thrive. 
                 </motion.p>
 
                 <motion.div
@@ -63,7 +60,7 @@ export default function Hero() {
                     className="mt-10 flex flex-wrap gap-4"
                 >
                     <a
-                        href="#takePart"
+                        href="#cta"
                         className="group inline-flex items-center gap-2 bg-accent px-7 py-3.5 font-mono text-xs uppercase tracking-[0.15em] text-white transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                     >
                         Take part
@@ -73,7 +70,7 @@ export default function Hero() {
                         />
                     </a>
                     <a
-                        href="#eventsNearYou"
+                        href="/events"
                         className="inline-flex items-center border border-line px-7 py-3.5 font-mono text-xs uppercase tracking-[0.15em] transition-colors hover:border-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-text"
                     >
                         Events near you

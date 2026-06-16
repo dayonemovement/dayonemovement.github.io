@@ -39,7 +39,7 @@ export default function Statement({ statement, align = 'left' }) {
                     ))}
                 </h2>
                 {statement.foot && (
-                    <p className="mt-6 max-w-md font-mono text-xs uppercase tracking-[0.2em] text-muted md:text-sm">
+                    <p className="mt-8 text-lg leading-relaxed text-muted md:text-xl">
                         {statement.foot}
                     </p>
                 )}

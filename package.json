@@ -7,8 +7,8 @@
     "build": "vite build",
     "dev": "vite",
     "lint": "eslint .",
-    "preview": "npm run build && wrangler dev",
-    "deploy": "npm run build && wrangler deploy"
+    "preview": "npm run build && rm -f .wrangler/deploy/config.json && wrangler dev",
+    "deploy": "npm run build && wrangler pages deploy"
   },
   "dependencies": {
     "framer-motion": "^12.40.0",

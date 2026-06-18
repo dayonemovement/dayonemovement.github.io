@@ -22,6 +22,11 @@ const videos = [
     id: 'siMal6QVblE',
     title: 'A Conversation With Native Americans on Race | Op-Docs',
     caption: 'Directed by Michèle Stephenson and Brian Young, the film grapples with the racist contradictions of a country that, many feel, would prefer it if Native Americans didn’t exist.'
+  },
+  {
+    id: 'vB7WMN4HfFc',
+    title: 'Organizing for Collective Liberation',
+    caption: 'NDN Launches the Landback Action Network! The LANDBACK Movement has been growing, expanding and creating impact throughout the Indigenous world. Now it’s time to further connect this growing movement through the building of a network made up of Indigenous peoples, communities, and Nations to build, collaborate, learn, and get the Landback.'
   }
 ]
 

@@ -17,6 +17,11 @@ const videos = [
     id: 'GiS44Yn1AN8',
     title: 'Life As A Young and Native American | Indigenous Voices',
     caption: 'For a century, the U.S government believed what was best for Native American kids was to strip them of their families and communities, their culture and language, their hair and clothes. Now, mounting research has demonstrated how this policy has decimated communities and been deadly to Native peoples. “Identification with a particular cultural background and a secure sense of cultural identity is associated with higher self-esteem, better educational attainment (grades and going to college), and is protective against mental health problems, substance use, and other issues for adolescents and adults,” a summary of research by the National Indian Child Welfare Association stated in 2017.',
+  },
+  {
+    id: 'siMal6QVblE',
+    title: 'A Conversation With Native Americans on Race | Op-Docs',
+    caption: 'Directed by Michèle Stephenson and Brian Young, the film grapples with the racist contradictions of a country that, many feel, would prefer it if Native Americans didn’t exist.'
   }
 ]
 

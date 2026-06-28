@@ -1,5 +1,4 @@
 import protest from "../assets/protest.jpg"
-import responceAct from "../assets/responseAct.png"
 import poster from "../assets/poster.png"
 
 export const resources = [
@@ -21,7 +20,7 @@ export const resources = [
     tags: ['geography', 'history', 'monasteries'],
     type: 'link',
     url: 'https://example.com/monastery-map',
-    thumbnail: responceAct,
+    thumbnail: poster,
   },
   {
     id: 'flag-illustration',

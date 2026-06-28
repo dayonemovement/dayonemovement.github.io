@@ -1,6 +1,6 @@
 import shirtless from "../assets/community/clay-banks-MpVXotwNMXU-unsplash copy.jpg"
 import landBack from "../assets/community/4ofyoulie-22.jpg"
-import faith from "../assets/community/306A8277.jpg"
+import faith from "../assets/community/306A8277.png"
 import landBackDC from "../assets/community/20210401-DC-March-10 (2) (1).jpg"
 import elizabeth from "../assets/community/elizabeth eckford.jpg"
 import native from "../assets/community/2023-IPD- Photo by - Angel White Eyes - 32.jpg"

@@ -2,7 +2,7 @@ import Reveal from "./Reveal"
 
 export default function PhotoGrid({ images, eyebrow }) {
   return (
-    <section className="border-t border-line py-20 md:py-28">
+    <section className="border-t border-line py-20 md:py-28" id="photo-grid">
       <div className="container">
         {eyebrow && (
           <Reveal>

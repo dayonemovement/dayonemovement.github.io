@@ -7,7 +7,7 @@ const FORM_URL = 'https://form.jotform.com/261651421910045'
 export default function CTA() {
 
     return (
-        <section className="relative overflow-hidden border-t border-line py-28 text-center md:py-40" id="cta">
+        <section className="relative overflow-hidden py-28 text-center md:py-40" id="cta">
             <div className="glow pointer-events-none absolute left-1/2 top-1/2 h-[70vmin] w-[70vmin] -translate-x-1/2 -translate-y-1/2" />
             <Reveal className="container relative">
                 <h2 className="mx-auto max-w-3xl font-display text-display font-black">

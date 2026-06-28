@@ -66,7 +66,7 @@ export default function Navbar() {
     <nav className={`fixed inset-x-0 top-0 z-50 h-16 border-b border-border backdrop-blur-md transition-colors duration-300 bg-bg/0 ${scrolled ? 'bg-bg/85' : ''}`}>
       <div className="container flex h-full items-center justify-between">
         <NavLink
-          to="/"
+          to="/#hero"
           className="font-display text-xl font-extrabold uppercase tracking-tight"
           onClick={() => setOpen(false)}
         >

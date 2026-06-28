@@ -1,18 +1,21 @@
 import Hero from "../components/Hero"
 import Rights from "../components/Rights"
 import Statement from "../components/Statement"
-import pImage from '../assets/navajo.jpg'
+import pImage from '../assets/community/26womensstrike1-.jpg'
 import ParallaxImage from "../components/ParallaxImage"
 import CTA from "../components/CTA"
+import PhotoGrid from "../components/PhotoGrid"
+import { gridImages } from "../data/gridImages"
 export default function Home() {
 
 
   return (
     <main>
       <Hero />
-      
+
       <Rights />
-      <ParallaxImage src={pImage} alt="Renewal" caption="" />
+      <PhotoGrid images={gridImages} eyebrow="In community" />
+
 
       <Statement
         statement={{
@@ -22,8 +25,9 @@ export default function Home() {
         }}
         align="right" />
 
+      <ParallaxImage src={pImage} alt="Renewal" caption="" />
 
-    <CTA />
+      <CTA />
     </main>
   )
 }

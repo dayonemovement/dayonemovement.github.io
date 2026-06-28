@@ -3,36 +3,36 @@
 /* Class-based dark mode (toggled on <html>; dark is the default — see index.html) */
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* ── Palette ──────────────────────────────────────────────────────
-   Dark is the home key: near-black, high contrast, one burning ember
-   accent — the "kindred light". Light mode is a stark protest-poster
-   inversion. Values swap under .dark. */
+@font-face {
+  font-family: "PF Fuel";
+  src: url("/fonts/pf-fuel-grime.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --bg: #f3efe6;
+  --bg: #FDF1E7;
   --surface: #ffffff;
-  --border: #1512100f;
-  --line: #15121026;
-  /* harder rule */
-  --text: #14110c;
-  --muted: #6c665b;
-  --accent: #d8401c;
-  /* ember */
+  --border: #15033010;
+  --line: #15033025;
+  --text: #150330;
+  --muted: #6b5f7a;
+  --accent: #FF6613;
   --accent-2: #f0a818;
-  /* flare */
-  --glow: 216 64 28;
-  /* rgb of accent, for glows */
+  --glow: 255 102 19;
 }
 
 .dark {
-  --bg: #0a0a0b;
-  --surface: #141417;
+  --bg: #150330;
+  --surface: #1f0845;
   --border: #ffffff14;
-  --line: #ffffff26;
-  --text: #f5f1e9;
-  --muted: #8a857c;
-  --accent: #f25c2a;
+  --line: #ffffff22;
+  --text: #FDF1E7;
+  --muted: #9b8faa;
+  --accent: #FF6613;
   --accent-2: #ffb02e;
-  --glow: 242 92 42;
+  --glow: 255 102 19;
 }
 
 /* ── Map semantic vars into Tailwind's theme (inline = emits var()) ─ */
@@ -46,7 +46,7 @@
   --color-accent: var(--accent);
   --color-accent-2: var(--accent-2);
 
-  --font-display: "Archivo", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "PF Fuel", ui-sans-serif, system-ui, sans-serif;
   --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "Space Mono", ui-monospace, monospace;
 
@@ -121,7 +121,6 @@
     }
   }
 
-  /* Brutalist outlined headline — used for ghosted, defiant type */
   .text-outline {
     color: transparent;
     -webkit-text-stroke: 1.5px var(--text);
@@ -135,13 +134,8 @@
 
 @layer utilities {
   @keyframes marquee {
-    from {
-      transform: translateX(0);
-    }
-
-    to {
-      transform: translateX(-50%);
-    }
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
   }
 
   .animate-marquee {

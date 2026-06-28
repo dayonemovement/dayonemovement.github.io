@@ -1,10 +1,10 @@
-import shirtless from "../assets/community/clay-banks-MpVXotwNMXU-unsplash copy.jpg"
-import landBack from "../assets/community/4ofyoulie-22.jpg"
-import faith from "../assets/community/306A8277.png"
-import landBackDC from "../assets/community/20210401-DC-March-10 (2) (1).jpg"
-import elizabeth from "../assets/community/elizabeth eckford.jpg"
-import native from "../assets/community/2023-IPD- Photo by - Angel White Eyes - 32.jpg"
-import breath from "../assets/community/obi-onyeador-uijVyqj-oc8-unsplash copy.jpg"
+import shirtless from "../assets/community/clay-banks-MpVXotwNMXU-unsplash copy.webp"
+import landBack from "../assets/community/4ofyoulie-22.webp"
+import faith from "../assets/community/306A8277.webp"
+import landBackDC from "../assets/community/20210401-DC-March-10 (2) (1).webp"
+import elizabeth from "../assets/community/elizabeth eckford.webp"
+import native from "../assets/community/2023-IPD- Photo by - Angel White Eyes - 32.webp"
+import breath from "../assets/community/obi-onyeador-uijVyqj-oc8-unsplash copy.webp"
 
 export const gridImages = [
   { image: landBack, alt: '', caption: '1. 4ofyoulie-22.jpg' },

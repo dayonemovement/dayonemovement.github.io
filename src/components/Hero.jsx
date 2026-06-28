@@ -18,7 +18,7 @@ export default function Hero() {
     })
 
     return (
-        <section className="flex h-dvh items-center">
+        <section className="flex h-dvh items-center" id="hero">
             <div className="container">
                 <motion.p
                     initial="hidden"
@@ -69,12 +69,12 @@ export default function Hero() {
                             className="transition-transform group-hover:translate-y-0.5"
                         />
                     </a>
-                    <a
+                    {/* <a
                         href="/events"
                         className="inline-flex items-center border border-line px-7 py-3.5 font-mono text-xs uppercase tracking-[0.15em] transition-colors hover:border-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-text"
                     >
                         Events near you
-                    </a>
+                    </a> */}
                 </motion.div>
             </div>
         </section>

@@ -5,10 +5,12 @@ import { Menu, X, Sun, Moon } from 'lucide-react'
 import { useTheme } from '../hooks/useTheme'
 
 const links = [
-  { to: '/', label: 'Home' },
-  { to: '/media', label: 'Media' },
-  { to: '/events', label: 'Events' },
-  { to: '/resources', label: 'Resources' },
+  { to: '/#hero', label: 'Home' },
+  // { to: '/media', label: 'Media' },
+  // { to: '/events', label: 'Events' },
+  // { to: '/resources', label: 'Resources' },  
+  { to: '/bill-of-essential-rights', label: 'Bill of Essential Rights'},
+  { to: '/video-guide', label: 'Video Guide'},
 ]
 
 function ThemeToggle() {

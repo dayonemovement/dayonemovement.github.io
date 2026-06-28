@@ -10,6 +10,8 @@ const NotFound = lazy(() => import('./pages/NotFound'))
 const Media = lazy(() => import('./pages/Media'))
 const Events = lazy(() => import('./pages/Events'))
 const Resources = lazy(() => import('./pages/Resources'))
+const BillOfEssentialRights = lazy(() => import('./pages/BillOfEssentialRights'))
+const VideoGuide = lazy(() => import('./pages/VideoGuide'))
 
 import PageSkeleton from './components/PageSkeleton'
 import { lazy, Suspense } from 'react'
@@ -29,6 +31,8 @@ export default function App() {
           <Route path="/media" element={<Media />} />
           <Route path="/events" element={<Events />} />
           <Route path="/resources" element={<Resources />} />
+          <Route path="/bill-of-essential-rights" element={<BillOfEssentialRights />} />
+          <Route path="/video-guide" element={<VideoGuide />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
 

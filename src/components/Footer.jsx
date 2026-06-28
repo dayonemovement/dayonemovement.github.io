@@ -1,15 +1,16 @@
 import { Link } from 'react-router-dom'
 
 const social = [
-    { label: 'Email', href: 'mailto:dayonemovement@proton.me' },
-    { label: 'Instagram', href: 'https://instagram.com/dayonemovement' },
+    { label: 'YouTube', href: 'https://www.youtube.com/@Dayonemvmt' },
+    { label: 'Instagram', href: 'https://instagram.com/dayonemvmt' },
+    { label: 'FaceBook', href: 'https://www.facebook.com/p/Dayone-Mvmt-61591116161494/'}
 ]
 
 export default function Footer() {
     return (
         <footer className="border-t border-line">
             <div className="container flex flex-col gap-6 py-10 sm:flex-row sm:items-center sm:justify-between">
-                <Link to="/" className="font-display text-lg font-extrabold uppercase tracking-tight">
+                <Link to="/#hero" className="font-display text-lg font-extrabold uppercase tracking-tight">
                     Day One Movement
                 </Link>
 

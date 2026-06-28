@@ -1,20 +1,18 @@
 import Hero from "../components/Hero"
-import Facts from "../components/Facts"
+import Rights from "../components/Rights"
 import Statement from "../components/Statement"
 import pImage from '../assets/navajo.jpg'
 import ParallaxImage from "../components/ParallaxImage"
-import Reveal from "../components/Reveal"
-import { Link } from "react-router-dom"
-import { ArrowUpRight } from "lucide-react"
+import CTA from "../components/CTA"
 export default function Home() {
 
 
   return (
     <main>
       <Hero />
-
-      <Facts />
-      <ParallaxImage src={pImage} alt="Renewal" caption="Mononoke" />
+      
+      <Rights />
+      <ParallaxImage src={pImage} alt="Renewal" caption="" />
 
       <Statement
         statement={{
@@ -25,24 +23,7 @@ export default function Home() {
         align="right" />
 
 
-      <section className="relative overflow-hidden border-t border-line py-28 text-center md:py-40" id="cta">
-        <div className="glow pointer-events-none absolute left-1/2 top-1/2 h-[70vmin] w-[70vmin] -translate-x-1/2 -translate-y-1/2" />
-        <Reveal className="container relative">
-          <h2 className="mx-auto max-w-3xl font-display text-display font-black">
-            Submit your <span className="text-accent">Packet</span>.
-          </h2>
-          <p className="mx-auto mt-6 max-w-md text-muted">
-            Learn the history. Share the story. Refuse the silence. Solidarity is the freedom
-            struggle's longest road home.
-          </p>
-          <Link
-            to="https://form.jotform.com/261651421910045"
-            className="mt-10 group inline-flex items-center gap-2 bg-accent px-9 py-4 font-mono text-xs uppercase tracking-[0.15em] text-white transition-opacity hover:opacity-90"
-          >
-            Form <ArrowUpRight size={16} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-          </Link>
-        </Reveal>
-      </section>
+    <CTA />
     </main>
   )
 }

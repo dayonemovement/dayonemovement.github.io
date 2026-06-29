@@ -2,6 +2,7 @@
 
 import { ArrowDown } from "lucide-react"
 import { motion, useReducedMotion } from "framer-motion"
+import bgImage from "../assets/protest.webp"
 
 const fadeUp = {
     hidden: { opacity: 0, y: 24 },
@@ -18,8 +19,22 @@ export default function Hero() {
     })
 
     return (
-        <section className="flex h-dvh items-center" id="hero">
-            <div className="container">
+        <section className="relative flex h-dvh items-center overflow-hidden" id="hero">
+
+            {/* Background image */}
+            <div
+                className="absolute inset-0 bg-cover bg-center"
+                style={{
+                    backgroundImage: `url(${bgImage})`,
+                    filter: "blur(3px)",
+                    // transform: "scale(1.05)",
+                }}
+            />
+            {/* Dark overlay for dark mode, stronger overlay for light mode */}
+            <div className="absolute inset-0 bg-black/50 dark:bg-black/70" />
+
+            {/* Foreground content */}
+            <div className="container relative z-10">
                 <motion.p
                     initial="hidden"
                     animate="visible"
@@ -30,7 +45,7 @@ export default function Hero() {
                     Day One
                 </motion.p>
 
-                <h1 className="font-display text-display leading-[0.95]">
+                <h1 className="font-display text-display leading-[0.95] text-white">
                     <motion.span
                         initial="hidden"
                         animate="visible"
@@ -47,7 +62,7 @@ export default function Hero() {
                     animate="visible"
                     variants={fadeUp}
                     transition={transition(0.3)}
-                    className="mt-8 max-w-xl text-lg leading-relaxed text-muted md:text-xl"
+                    className="mt-8 max-w-xl text-lg leading-relaxed text-white/70 md:text-xl"
                 >
                     A movement of people committed to a simple promise of not another 250 years of the same injustice. Day 1 is for anyone who believes in naming the harms of the past and building a future that includes LANDBACK and Reparations, where all people can thrive. 
                 </motion.p>
@@ -69,12 +84,6 @@ export default function Hero() {
                             className="transition-transform group-hover:translate-y-0.5"
                         />
                     </a>
-                    {/* <a
-                        href="/events"
-                        className="inline-flex items-center border border-line px-7 py-3.5 font-mono text-xs uppercase tracking-[0.15em] transition-colors hover:border-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-text"
-                    >
-                        Events near you
-                    </a> */}
                 </motion.div>
             </div>
         </section>

@@ -31,7 +31,7 @@ export default function Rights() {
                     {String(i + 1).padStart(2, '0')}
                   </span>
                   <div>
-                    <p className="font-display text-base font-black uppercase tracking-wide">{r.title}</p>
+                    <p className="font-display text-3xl font-black uppercase tracking-wide">{r.title}</p>
                     <p className="mt-2 text-sm leading-relaxed text-muted">{r.body}</p>
                   </div>
                 </div>

@@ -75,7 +75,7 @@ export default function VideoGuide() {
                     </h1>
                 </Reveal>
                 <Reveal delay={0.1} className="mt-10 max-w-2xl">
-                    <p className="border-l-2 border-accent pl-4 font-display text-lg font-black uppercase tracking-wide">
+                    <p className="border-l-2 border-accent pl-4 font-display text-3xl font-black uppercase tracking-wide">
                         America, stolen lands built by stolen hands.<br />
                         Not another 250. Not another day.
                     </p>
@@ -88,7 +88,7 @@ export default function VideoGuide() {
             {/* Recording tips */}
             <section className="container py-16 md:py-24">
                 <Reveal>
-                    <p className="mb-10 font-mono text-xs uppercase tracking-[0.25em] text-accent">
+                    <p className="mb-10 font-mono text-3xl uppercase tracking-[0.25em] text-accent">
                         Guidance for Recording
                     </p>
                 </Reveal>
@@ -96,7 +96,7 @@ export default function VideoGuide() {
                     {tips.map((tip, i) => (
                         <Reveal key={i} delay={0.04 * i}>
                             <div className="grid grid-cols-[6rem_1fr] gap-6 py-8 md:grid-cols-[10rem_1fr] md:gap-10">
-                                <p className="pt-0.5 font-display text-sm font-black uppercase tracking-wide text-accent">
+                                <p className="pt-0.5 font-display text-2xl font-black uppercase tracking-wide text-accent">
                                     {tip.label}
                                 </p>
                                 <p className="text-sm leading-relaxed text-muted">{tip.body}</p>
@@ -109,7 +109,7 @@ export default function VideoGuide() {
             {/* Prompts */}
             <section className="container pb-16 md:pb-24">
                 <Reveal>
-                    <p className="mb-10 font-mono text-xs uppercase tracking-[0.25em] text-accent">
+                    <p className="mb-10 font-mono text-3xl uppercase tracking-[0.25em] text-accent">
                         Prompts
                     </p>
                 </Reveal>

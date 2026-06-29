@@ -3,14 +3,16 @@ import { NavLink, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Menu, X, Sun, Moon } from 'lucide-react'
 import { useTheme } from '../hooks/useTheme'
+import logoDark from '../assets/dayone-dark.png'
+import logoWhite from '../assets/dayone-white.png'
 
 const links = [
   { to: '/#hero', label: 'Home' },
   // { to: '/media', label: 'Media' },
   // { to: '/events', label: 'Events' },
   // { to: '/resources', label: 'Resources' },  
-  { to: '/bill-of-essential-rights', label: 'Bill of Essential Rights'},
-  { to: '/video-guide', label: 'Video Guide'},
+  { to: '/bill-of-essential-rights', label: 'Bill of Essential Rights' },
+  { to: '/video-guide', label: 'Video Guide' },
 ]
 
 function ThemeToggle() {
@@ -67,10 +69,21 @@ export default function Navbar() {
       <div className="container flex h-full items-center justify-between">
         <NavLink
           to="/#hero"
-          className="font-display text-xl font-extrabold uppercase tracking-tight"
+          className="flex items-center"
           onClick={() => setOpen(false)}
         >
-          Day One Movement
+          <img
+            src={logoDark}
+            alt="Day One Movement"
+            className="block dark:hidden h-15 w-auto"
+            decoding="async"
+          />
+          <img
+            src={logoWhite}
+            alt="Day One Movement"
+            className="hidden dark:block h-15 w-auto"
+            decoding="async"
+          />
         </NavLink>
 
         {/* Desktop */}

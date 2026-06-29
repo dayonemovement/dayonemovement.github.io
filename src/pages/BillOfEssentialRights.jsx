@@ -56,7 +56,7 @@ export default function BillOfEssentialRights() {
                                 </div>
                                 {/* Content */}
                                 <div>
-                                    <h2 className="font-display text-xl font-black uppercase tracking-wide md:text-2xl">
+                                    <h2 className="font-display text-2xl font-black uppercase tracking-wide md:text-3xl">
                                         {r.title}
                                     </h2>
                                     <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted md:text-base">

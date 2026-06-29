@@ -5,7 +5,7 @@ import logoWhite from '../assets/dayone-white-sm.png'
 const social = [
     { label: 'YouTube', href: 'https://www.youtube.com/@Dayonemvmt' },
     { label: 'Instagram', href: 'https://instagram.com/dayonemvmt' },
-    { label: 'FaceBook', href: 'https://www.facebook.com/p/Dayone-Mvmt-61591116161494/' }
+    { label: 'FaceBook', href: 'https://www.facebook.com/dayonemvmt' }
 ]
 
 export default function Footer() {

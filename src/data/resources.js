@@ -1,4 +1,4 @@
-import protest from "../assets/protest.jpg"
+import protest from "../assets/protest.webp"
 import poster from "../assets/poster.png"
 
 export const resources = [

@@ -3,8 +3,8 @@ import { NavLink, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Menu, X, Sun, Moon } from 'lucide-react'
 import { useTheme } from '../hooks/useTheme'
-import logoDark from '../assets/dayone-dark.png'
-import logoWhite from '../assets/dayone-white.png'
+import logoDark from '../assets/dayone-dark-sm.png'
+import logoWhite from '../assets/dayone-white-sm.png'
 
 const links = [
   { to: '/#hero', label: 'Home' },
@@ -74,13 +74,13 @@ export default function Navbar() {
           <img
             src={logoDark}
             alt="Day One Movement"
-            className="block dark:hidden h-15 w-auto"
+            className="block dark:hidden h-19 w-auto"
             decoding="async"
           />
           <img
             src={logoWhite}
             alt="Day One Movement"
-            className="hidden dark:block h-15 w-auto"
+            className="hidden dark:block h-19 w-auto"
             decoding="async"
           />
         </NavLink>

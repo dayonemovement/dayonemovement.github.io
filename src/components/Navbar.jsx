@@ -60,12 +60,11 @@ export default function Navbar() {
   }, [])
 
   const linkClass = ({ isActive }) =>
-    `font-mono text-[0.7rem] uppercase tracking-[0.2em] transition-colors ${
-      isActive ? 'text-accent' : 'text-muted hover:text-text'
+    `font-mono text-[0.7rem] uppercase tracking-[0.2em] transition-colors ${isActive ? 'text-accent' : 'text-muted hover:text-text'
     }`
 
   return (
-    <nav className={`fixed inset-x-0 top-0 z-50 h-16 border-b border-border backdrop-blur-md transition-colors duration-300 bg-bg/0 ${scrolled ? 'bg-bg/85' : ''}`}>
+    <nav className="fixed inset-x-0 top-0 z-50 h-16 border-b border-border bg-bg/80 backdrop-blur-md">
       <div className="container flex h-full items-center justify-between">
         <NavLink
           to="/#hero"

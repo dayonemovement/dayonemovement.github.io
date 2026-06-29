@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom'
+import logoDark from '../assets/dayone-dark-sm.png'
+import logoWhite from '../assets/dayone-white-sm.png'
 
 const social = [
     { label: 'YouTube', href: 'https://www.youtube.com/@Dayonemvmt' },
     { label: 'Instagram', href: 'https://instagram.com/dayonemvmt' },
-    { label: 'FaceBook', href: 'https://www.facebook.com/p/Dayone-Mvmt-61591116161494/'}
+    { label: 'FaceBook', href: 'https://www.facebook.com/p/Dayone-Mvmt-61591116161494/' }
 ]
 
 export default function Footer() {
@@ -11,7 +13,18 @@ export default function Footer() {
         <footer className="border-t border-line">
             <div className="container flex flex-col gap-6 py-10 sm:flex-row sm:items-center sm:justify-between">
                 <Link to="/#hero" className="font-display text-lg font-extrabold uppercase tracking-tight">
-                    Day One Movement
+                    <img
+                        src={logoDark}
+                        alt="Day One Movement"
+                        className="block dark:hidden h-19 w-auto"
+                        decoding="async"
+                    />
+                    <img
+                        src={logoWhite}
+                        alt="Day One Movement"
+                        className="hidden dark:block h-19 w-auto"
+                        decoding="async"
+                    />
                 </Link>
 
                 <ul className="flex flex-wrap gap-6">

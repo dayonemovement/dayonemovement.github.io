@@ -30,7 +30,6 @@ function ThemeToggle() {
 }
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
   const location = useLocation()
 
@@ -48,7 +47,6 @@ export default function Navbar() {
     const onScroll = () => {
       if (!ticking) {
         window.requestAnimationFrame(() => {
-          setScrolled(window.scrollY > 20)
           ticking = false
         })
         ticking = true

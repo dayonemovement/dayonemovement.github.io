@@ -99,7 +99,7 @@ export default function VideoGuide() {
                                 <p className="pt-0.5 font-display text-2xl font-black uppercase tracking-wide text-accent">
                                     {tip.label}
                                 </p>
-                                <p className="text-sm leading-relaxed text-muted">{tip.body}</p>
+                                <p className="text-base leading-relaxed">{tip.body}</p>
                             </div>
                         </Reveal>
                     ))}

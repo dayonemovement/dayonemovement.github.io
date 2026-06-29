@@ -32,7 +32,7 @@ export default function Rights() {
                   </span>
                   <div>
                     <p className="font-display text-3xl font-black uppercase tracking-wide">{r.title}</p>
-                    <p className="mt-2 text-sm leading-relaxed text-muted">{r.body}</p>
+                    <p className="mt-2 text-base leading-relaxed text-muted">{r.body}</p>
                   </div>
                 </div>
               ))}

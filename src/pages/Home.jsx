@@ -6,12 +6,15 @@ import ParallaxImage from "../components/ParallaxImage"
 import CTA from "../components/CTA"
 import PhotoGrid from "../components/PhotoGrid"
 import { gridImages } from "../data/gridImages"
+import PressConference from "../components/PressConference"
+
 export default function Home() {
 
 
   return (
     <main>
       <Hero />
+      <PressConference />
 
       <Rights />
       <PhotoGrid images={gridImages} eyebrow="In community" />
